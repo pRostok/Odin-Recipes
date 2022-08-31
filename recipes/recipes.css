@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aqua;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+img {    
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 4px;
+    padding: 5px;
+    width: 650px;    
+}
+
+img:hover {
+    box-shadow: 12px 12px 12px 0 rgba(0, 0, 0, 1.5);
+}
+
+h1 {
+    font-size: 50px;    
+}
+
+p {
+    font-size: 35px;
+}
+
+a {
+    font-size: 40px;
+}
+
+.text {
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s ease;
+}
+
+.container {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.text.active {
+    background-color: white;
+}
+
+
+.title {
+    margin: 0 35px 0 0;
+    font-size: 40px;
+}
+
+.info {
+    margin: 30px 10px 0;
+    display: none;
+    font-weight: lighter;
+    font-size: larger;
+    text-align: left;
+    font-size: 30px;
+}
+
+.text.active .info {
+    display: block;
+}
+
+.btn {
+    background-color: transparent;
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    padding: 0;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    height: 30px;
+    width: 30px;
+}
+
+.btn .fa-xmark {
+    display: none;
+}
+
+.text.active .btn .fa-xmark {
+    display: block;
+}
+
+.text.active .btn .fa-chevron-down {
+    display: none;
+}
+
+.text.active .btn {
+    background-color: lightblue;
+    color: white;
+}
