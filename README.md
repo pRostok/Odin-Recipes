@@ -12,6 +12,6 @@ Odin Recipes
 💡 Features
 
 - User integration 
-- Popup effect
-- Ability to sort pictures
+- Hidden navbar
+- Hidden search
 
